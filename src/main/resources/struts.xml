@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+ 
+    <package name="search1" extends="struts-default" namespace="/">
+        <action name="search"  class="org.struts.action.SearchAction" method="search">
+            <result>/search.jsp</result>
+        </action>
+        <action name="CommonSearch"  class="org.struts.action.SearchAction" method="search">
+            <result>/Common.jsp</result>
+        </action>
+    </package>
+     
+    <package name="search2" extends="struts-default" namespace="/aa">
+        <action name="CommonSearch"  class="org.struts.action.SearchAction" method="search">
+            <result>/aaCommon.jsp</result>
+        </action>
+    </package>
+     
+</struts>
